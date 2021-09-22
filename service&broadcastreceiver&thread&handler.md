@@ -18,4 +18,7 @@
 새 액티비리를 실행하는 인텐트를 뜻한다.
 `Intent intent = new Intent(context context, ~~.class);`
 `startActivity(intent)`
--  
+-  Implicit Intent
+다른 기능을 하는 앱을 호출할 수 있는 기능
+`Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url주소));`
+`startActivity(intent);`
