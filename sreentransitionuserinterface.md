@@ -13,3 +13,12 @@
         - `LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);`
         - `inflater.inflate(R.layout.xml, 객체명, true);`
         - 전체 인플레이션으로는 부분화면을 메모리에 객체화 불가
+- Activity : 화면에 표시되는 UI 구성을 위한 기본 요소
+    - MainActivity가 앱 실행 시 최초로 보여지는 Activity
+- Context : 애플리케이션(객체)의 현재 상태의 맥락
+    - 생성된 객체의 현재 상태
+    - 리소스, db, preference의 접근 제공 
+    - Activity Context : 액티비티에서 사용 가능
+        - `ContentProvider`의 `getContext()`를 사용한다. 
+    - Application Context
+    
