@@ -43,3 +43,5 @@ PHP-Hypertext Preprocessor
 - HTML 코드를 생성하는 역할을 한다. 
 - 웹개발을 위해 사용된다. 
 - db SERVER에 연동이 된다. 
+- 시스템에서 파일을 생성, 관리 기능 가능
+- 서버의 기능을 담당하는 언어
