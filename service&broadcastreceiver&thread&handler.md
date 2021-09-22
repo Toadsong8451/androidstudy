@@ -30,3 +30,17 @@
 - 표준 JAVA therad와 동일하게 작동 (정과프 프린트 참고!)  
 `BackgroundThread thread = new BAckgroundThread();`  
 `thread.start();`  
+## Handler 
+Main Thread는 UI 작업을 진행한다  
+임의의 thread에서 다른 thread의 UI를 다루는 것은 불가능 -> Handler 사용
+Handler : 서로 다른 Thread 간의 참조를 위해 만들어짐
+- 메시지 전송 `public void handleMessage(Message msg)`
+- Runnable 객체 사용 
+    -Runnable 객체를 Post 메서드로 전달 -> run 메서드 실행
+
+## Thread와 Service의 차이점
+- Service 
+    - 백그라운드에서 실행되는 구성요소
+    - 상호작용을 안해도 사용이 가능하다. 
+- Thread
+    - 사용자가 앱과 상호작용하는 동안 메인 스레드 밖에서 작업 수행 시
