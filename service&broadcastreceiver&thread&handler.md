@@ -14,11 +14,19 @@
     - 둘다 같은 역할 but 앤티비티 존재 X or change 시 `getApplicationContext()`를 사용하자
 
 ## Intent
-- Explicit Intent 
-새 액티비리를 실행하는 인텐트를 뜻한다.
-`Intent intent = new Intent(context context, ~~.class);`
-`startActivity(intent)`
--  Implicit Intent
-다른 기능을 하는 앱을 호출할 수 있는 기능
-`Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url주소));`
-`startActivity(intent);`
+- Explicit Intent : 새 액티비리를 실행하는 인텐트를 뜻한다.  
+`Intent intent = new Intent(context context, ~~.class);`  
+`startActivity(intent)`  
+-  Implicit Intent : 다른 기능을 하는 앱을 호출할 수 있는 기능  
+`Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url주소));`  
+`startActivity(intent);`  
+## Logcat
+- View > Tool Windows > Logcat
+    - Log.e(오류), Log.w(경고), Log.i(정보), Log.d(디버그), Log.v(상세)
+## Broadcasting
+- 다른 앱으로부터 특정 메시지를 받기 위해 만들 앱에 브로드캐스트 수신자를 등하여 앱에 등록
+## Thread
+- Process <-> Thread : thread는 process 내에서 실행되는 흐름의 단위
+- 표준 JAVA therad와 동일하게 작동 (정과프 프린트 참고!)  
+`BackgroundThread thread = new BAckgroundThread();`  
+`thread.start();`  
