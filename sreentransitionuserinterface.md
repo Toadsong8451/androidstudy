@@ -15,10 +15,17 @@
         - 전체 인플레이션으로는 부분화면을 메모리에 객체화 불가
 - Activity : 화면에 표시되는 UI 구성을 위한 기본 요소
     - MainActivity가 앱 실행 시 최초로 보여지는 Activity
-- Context : 애플리케이션(객체)의 현재 상태의 맥락
-    - 생성된 객체의 현재 상태
-    - 리소스, db, preference의 접근 제공 
-    - Activity Context : 액티비티에서 사용 가능
-        - `ContentProvider`의 `getContext()`를 사용한다. 
-    - Application Context
-    
+    - Context : 애플리케이션(객체)의 현재 상태의 맥락
+        - 생성된 객체의 현재 상태
+        - 리소스, db, preference의 접근 제공 
+        - Activity Context : 액티비티에서 사용 가능
+            - `ContentProvider`의 `getContext()`를 사용한다. 
+        - Application Context
+           - `getApplicationContext()`를 사용한다. 
+          - Context가 호출이 유지된다면 메모리 누수가 가능하다. (기존의 Activity는 가비지 콜렉터로 관리되지만 Application context로 호출을 해놓는다면 계속 참조가 유지되기 때문이다.)
+    - 생성, 시작, 실행, 일시정지, resume, 중지, 소멸 (생명주기)
+    - `startActivity`를 이용하여 소스에서 띄운다. 
+    - 만일 Activity a에서 부른 b에서 다시 돌아오기 위해서는 `registerForActivityResult`를 이용한다. 
+- Intent : 다른 앱의 구성요소, 작업을 요청하는 데 사용되는 객체
+    -start activity, start service, deliver Broadcast 등의 기능 가능
+*Fragment랑 상하 탭, 뷰페이저는 과제 열심히 했으면 됨*
