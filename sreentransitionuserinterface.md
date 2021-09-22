@@ -28,4 +28,5 @@
     - 만일 Activity a에서 부른 b에서 다시 돌아오기 위해서는 `registerForActivityResult`를 이용한다. 
 - Intent : 다른 앱의 구성요소, 작업을 요청하는 데 사용되는 객체
     -start activity, start service, deliver Broadcast 등의 기능 가능
+    
 *Fragment랑 상하 탭, 뷰페이저는 과제 열심히 했으면 됨*
