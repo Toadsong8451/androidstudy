@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rect_drawable"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="num1"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="num2"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:text="result"
+        android:textSize="28sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="131dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/button_drawable"
+        android:backgroundTintMode="screen"
+        android:onClick="plusClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="131dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="232dp"
+        android:background="@drawable/button_minus"
+        android:backgroundTintMode="screen"
+        android:onClick="subClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="131dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/button_multi"
+        android:backgroundTintMode="screen"
+        android:onClick="mulClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="131dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="232dp"
+        android:background="@drawable/button_div"
+        android:backgroundTintMode="screen"
+        android:onClick="divClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:background="@drawable/border_drawable"
+        android:onClick="exitClick"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

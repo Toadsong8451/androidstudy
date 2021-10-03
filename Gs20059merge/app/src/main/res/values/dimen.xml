@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="pageMargin">10dp</dimen> //페이지끼리 간격
+    <dimen name="offset">30dp</dimen> //페이지 보이는 정도
+
+</resources>
