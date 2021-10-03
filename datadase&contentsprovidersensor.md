@@ -24,7 +24,7 @@ SQLite : 임베이드 데이터베이스 (for 안드로이드)
 ### 스키마
 - 데이터 베이스 구조, 조건 
 - SQLiteOpenHelper 클래스를 사용
-    - `getReadableDatabase()`, `getWritableDAtabase()`을 호출
+    - `getReadableDatabase()`, `getWritableDatabase()`을 호출
 ### 내용 제공자
 응용 프로그램 사이에 데이터를 공유하기 위한 컴포넌트
 - 자신의 데이터에는 자신만 접근 가능 -> 외부 공개를 위해서
